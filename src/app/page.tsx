@@ -1,7 +1,9 @@
 /* import Image from 'next/image' Esse componente aqui é importante de se lembrar*/
 
+import { redirect } from "next/navigation";
+
 export default function Home() {
-  return (
-    <h1>hello world</h1>
-  )
+  const route = redirect("/login");
+
+  return <h1>Bem vindo ao projeto do setor de protocolos da UNICAP!</h1>;
 }
