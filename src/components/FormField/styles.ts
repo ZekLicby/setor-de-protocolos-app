@@ -7,9 +7,8 @@ interface FormTitleProps {
 }
 
 export const FormFieldContainer = styled.form`
-  width: 589px;
-  height: 741px;
   background-color: ${theme.colors.neutral["white"]};
+  padding: 40px 110px 190px 110px;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -17,9 +16,22 @@ export const FormFieldContainer = styled.form`
   justify-content: center;
 `;
 
-export const TitleAndParagraph = styled.section`
+export const FormArea = styled.section`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 80px;
+`;
+
+export const TitleAndParagraph = styled.section`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+  margin-bottom: 32px;
 `;
 
 export const FormTitle = styled.h1<FormTitleProps>`
@@ -38,4 +50,10 @@ export const BottomText = styled.a`
   font-size: ${theme.typography.fontSize.m};
   font-weight: ${theme.typography.fontWeight[400]};
   cursor: pointer;
+`;
+
+export const LoginInputs = styled.section`
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 `;
