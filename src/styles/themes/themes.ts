@@ -8,6 +8,7 @@ export const theme = {
 
     neutral: {
       "010": "#A6A6A6",
+      "020": "#9292921F",
       black: "#000",
       white: "#fff",
     },

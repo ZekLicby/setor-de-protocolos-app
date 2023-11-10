@@ -1,5 +1,3 @@
-/* import Image from 'next/image' Esse componente aqui é importante de se lembrar*/
-
 import { FormField } from "@/components/FormField";
 import { LoginContainer } from "./styles";
 import { theme } from "@/styles/themes/themes";
