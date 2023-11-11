@@ -3,7 +3,7 @@ import { LoginContainer } from "./styles";
 import { theme } from "@/styles/themes/themes";
 import { ButtonBlockProps } from "@/types/buttonTypes";
 
-export const Login = () => {
+const Login = () => {
   const LoginButton: ButtonBlockProps = {
     textContent: "Entrar",
     backgroundColor: theme.colors.primary["100"],
@@ -14,7 +14,7 @@ export const Login = () => {
     height: 48,
     width: 370,
     onClick: () => {
-      console.log("kakaka, leo");
+      console.log("Teste completo com sucesso!");
     },
   };
 
@@ -30,3 +30,5 @@ export const Login = () => {
     </LoginContainer>
   );
 };
+
+export default Login;
