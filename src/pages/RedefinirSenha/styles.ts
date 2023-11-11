@@ -1,7 +1,7 @@
 import { theme } from "@/styles/themes/themes";
 import styled from "styled-components";
 
-export const RedefinirSenhaContainer = styled.section`
+const RedefinirSenhaContainer = styled.section`
   min-height: 100vh;
   max-height: 100vh;
   width: 100%;
@@ -10,3 +10,5 @@ export const RedefinirSenhaContainer = styled.section`
   align-items: center;
   justify-content: center;
 `;
+
+export default RedefinirSenhaContainer;
