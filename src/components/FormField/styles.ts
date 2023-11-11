@@ -14,6 +14,7 @@ export const FormFieldContainer = styled.form`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 590px;
 `;
 
 export const FormArea = styled.section`
@@ -23,6 +24,14 @@ export const FormArea = styled.section`
   justify-content: center;
   gap: 24px;
   margin-top: 80px;
+
+  a {
+    color: ${theme.colors.neutral["010"]};
+    text-decoration: underline;
+    font-size: ${theme.typography.fontSize.m};
+    font-weight: ${theme.typography.fontWeight[400]};
+    cursor: pointer;
+  }
 `;
 
 export const TitleAndParagraph = styled.section`
@@ -42,14 +51,6 @@ export const FormTitle = styled.h1<FormTitleProps>`
 export const FormParagraph = styled.p`
   color: ${theme.colors.neutral["010"]};
   font-size: ${theme.typography.fontSize.m};
-`;
-
-export const BottomText = styled.a`
-  color: ${theme.colors.neutral["010"]};
-  text-decoration: underline;
-  font-size: ${theme.typography.fontSize.m};
-  font-weight: ${theme.typography.fontWeight[400]};
-  cursor: pointer;
 `;
 
 export const LoginInputs = styled.section`

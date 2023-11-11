@@ -26,6 +26,7 @@ const Login = () => {
         bottomTextContent="Esqueceu a senha?"
         pageType={"login"}
         pageButton={LoginButton}
+        linkTo="/esqueci-minha-senha"
       />
     </LoginContainer>
   );
