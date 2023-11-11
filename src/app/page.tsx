@@ -1,5 +1,3 @@
-/* import Image from 'next/image' Esse componente aqui é importante de se lembrar*/
-
 import { redirect } from "next/navigation";
 
 export default function Home() {
