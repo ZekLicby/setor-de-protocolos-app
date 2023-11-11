@@ -1,8 +1,7 @@
 import { ButtonBlockProps } from "@/types/buttonTypes";
-import { RedefinirSenhaContainer } from "./styles";
 import { theme } from "@/styles/themes/themes";
-import { LoginContainer } from "../Login/styles";
 import { FormField } from "@/components/FormField";
+import RedefinirSenhaContainer from "./styles";
 
 const RedefinirSenha = () => {
   const LoginButton: ButtonBlockProps = {
@@ -21,15 +20,13 @@ const RedefinirSenha = () => {
 
   return (
     <RedefinirSenhaContainer>
-      <LoginContainer>
-        <FormField
-          titleText="Redefinição de senha"
-          bottomTextContent="Cancelar"
-          pageType={"redefinicaoDeSenha"}
-          pageButton={LoginButton}
-          linkTo="/login"
-        />
-      </LoginContainer>
+      <FormField
+        titleText="Redefinição de senha"
+        bottomTextContent="Cancelar"
+        pageType={"redefinicaoDeSenha"}
+        pageButton={LoginButton}
+        linkTo="/login"
+      />
     </RedefinirSenhaContainer>
   );
 };

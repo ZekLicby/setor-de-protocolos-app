@@ -1,7 +1,7 @@
 import { FormField } from "@/components/FormField";
-import { EsqueciMinhaSenhaContainer } from "./styles";
 import { ButtonBlockProps } from "@/types/buttonTypes";
 import { theme } from "@/styles/themes/themes";
+import EsqueciMinhaSenhaContainer from "./styles";
 
 const EsqueciMinhaSenha = () => {
   const ForgotPasswordButton: ButtonBlockProps = {

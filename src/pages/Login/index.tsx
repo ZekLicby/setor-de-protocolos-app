@@ -1,5 +1,5 @@
 import { FormField } from "@/components/FormField";
-import { LoginContainer } from "./styles";
+import LoginContainer from "./styles";
 import { theme } from "@/styles/themes/themes";
 import { ButtonBlockProps } from "@/types/buttonTypes";
 
