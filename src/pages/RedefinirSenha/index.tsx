@@ -1,7 +1,37 @@
+import { ButtonBlockProps } from "@/types/buttonTypes";
 import { RedefinirSenhaContainer } from "./styles";
+import { theme } from "@/styles/themes/themes";
+import { LoginContainer } from "../Login/styles";
+import { FormField } from "@/components/FormField";
 
 const RedefinirSenha = () => {
-  return <RedefinirSenhaContainer></RedefinirSenhaContainer>;
+  const LoginButton: ButtonBlockProps = {
+    textContent: "Redefinir senha",
+    backgroundColor: theme.colors.primary["100"],
+    border: { borderColor: "", borderStyle: "hidden", borderWidth: 0 },
+    borderRadius: 4,
+    padding: "10px",
+    fontColor: theme.colors.neutral.white,
+    height: 48,
+    width: 362,
+    onClick: () => {
+      console.log("Teste completo com sucesso!");
+    },
+  };
+
+  return (
+    <RedefinirSenhaContainer>
+      <LoginContainer>
+        <FormField
+          titleText="Redefinição de senha"
+          bottomTextContent="Cancelar"
+          pageType={"redefinicaoDeSenha"}
+          pageButton={LoginButton}
+          linkTo="/login"
+        />
+      </LoginContainer>
+    </RedefinirSenhaContainer>
+  );
 };
 
 export default RedefinirSenha;

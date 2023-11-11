@@ -7,5 +7,6 @@ export interface FormFieldProps {
   pageButton: ButtonBlockProps;
   bottomTextContent: string;
   titleText: string;
-  paragraphText: string;
+  paragraphText?: string;
+  linkTo: string;
 }
