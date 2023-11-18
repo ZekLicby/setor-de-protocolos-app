@@ -17,7 +17,7 @@ const ConsultaBodyConsultasContainer = styled.section`
   gap: 28px;
 `;
 
-const Consulta = styled.section`
+const Consultas = styled.section`
   border-radius: 5px;
   background: #d9d9d9;
   padding: 20px 24px;
@@ -27,11 +27,9 @@ const Consulta = styled.section`
   cursor: pointer;
 `;
 
-const ConsultaElementos = {
+export {
   ConsultaContainer,
   ConsultaBodyContainer,
   ConsultaBodyConsultasContainer,
-  Consulta,
+  Consultas,
 };
-
-export default ConsultaElementos;

@@ -1,45 +1,50 @@
 import { Header } from "@/components/Header";
-import ConsultaElementos from "./styles";
 import Navbar from "@/components/Navbar";
+import {
+  ConsultaBodyConsultasContainer,
+  ConsultaBodyContainer,
+  ConsultaContainer,
+  Consultas,
+} from "./styles";
 
 function Consulta() {
   return (
-    <ConsultaElementos.ConsultaContainer>
+    <ConsultaContainer>
       <Navbar />
-      <ConsultaElementos.ConsultaBodyContainer>
+      <ConsultaBodyContainer>
         <Header />
-        <ConsultaElementos.ConsultaBodyConsultasContainer>
-          <ConsultaElementos.Consulta>
+        <ConsultaBodyConsultasContainer>
+          <Consultas>
             <p>Requerimento 1</p>
             <p>07/10/2023 08:30PM</p>
-          </ConsultaElementos.Consulta>
-          <ConsultaElementos.Consulta>
+          </Consultas>
+          <Consultas>
             <p>Requerimento 2</p>
             <p>07/10/2023 08:30PM</p>
-          </ConsultaElementos.Consulta>
-          <ConsultaElementos.Consulta>
+          </Consultas>
+          <Consultas>
             <p>Requerimento 3</p>
             <p>07/10/2023 08:30PM</p>
-          </ConsultaElementos.Consulta>
-          <ConsultaElementos.Consulta>
+          </Consultas>
+          <Consultas>
             <p>Requerimento 4</p>
             <p>07/10/2023 08:30PM</p>
-          </ConsultaElementos.Consulta>
-          <ConsultaElementos.Consulta>
+          </Consultas>
+          <Consultas>
             <p>Requerimento 5</p>
             <p>07/10/2023 08:30PM</p>
-          </ConsultaElementos.Consulta>
-          <ConsultaElementos.Consulta>
+          </Consultas>
+          <Consultas>
             <p>Requerimento 6</p>
             <p>07/10/2023 08:30PM</p>
-          </ConsultaElementos.Consulta>
-          <ConsultaElementos.Consulta>
+          </Consultas>
+          <Consultas>
             <p>Requerimento 7</p>
             <p>07/10/2023 08:30PM</p>
-          </ConsultaElementos.Consulta>
-        </ConsultaElementos.ConsultaBodyConsultasContainer>
-      </ConsultaElementos.ConsultaBodyContainer>
-    </ConsultaElementos.ConsultaContainer>
+          </Consultas>
+        </ConsultaBodyConsultasContainer>
+      </ConsultaBodyContainer>
+    </ConsultaContainer>
   );
 }
 
