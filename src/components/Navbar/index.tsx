@@ -1,28 +1,39 @@
-// @/components/Navbar/index.tsx
-import React from 'react';
-import { ConsultNavbarItem, NavbarContainer, ProfileNavbarItem, RegisterNavbarItem, HomeNavbarItem } from './style';
+// Carlos.Lins refatorar depois
+import React from "react";
+import {
+  ConsultNavbarItem,
+  NavbarContainer,
+  ProfileNavbarItem,
+  RegisterNavbarItem,
+  HomeNavbarItem,
+  IconTitle,
+} from "./style";
+import { HomeIcon } from "@/icons/homeIcon";
+import { NavbarUserIcon } from "@/icons/navbarUserIcon";
+import { RegisterIcon } from "@/icons/registerIcon";
+import { ConsultIcon } from "@/icons/consultIcon";
 
 const Navbar: React.FC = () => {
   return (
     <NavbarContainer>
       <HomeNavbarItem isHome>
-        <img src="../../images/home.png"/>
-        <span>Home</span>
+        <HomeIcon />
+        <IconTitle>Home</IconTitle>
       </HomeNavbarItem>
 
       <ProfileNavbarItem isProfile>
-        <img src="../../images/profile.png"/>
-        <span>Profile</span>
+        <NavbarUserIcon />
+        <IconTitle>Perfil</IconTitle>
       </ProfileNavbarItem>
 
       <RegisterNavbarItem isRegister>
-        <img src="../../images/register.png"/>
-        <span>Register</span>
+        <RegisterIcon />
+        <IconTitle>Registro</IconTitle>
       </RegisterNavbarItem>
 
       <ConsultNavbarItem isConsult>
-        <img src="../../images/consult.png"/>
-        <span>Consult</span>
+        <ConsultIcon />
+        <IconTitle>Consulta</IconTitle>
       </ConsultNavbarItem>
     </NavbarContainer>
   );
