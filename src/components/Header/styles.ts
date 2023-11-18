@@ -17,6 +17,10 @@ export const FilterContainer = styled.section`
   gap: 70px;
 `;
 
+export const ProtocolNumber = styled.section`
+  
+`;
+
 export const FilterByDepartament = styled.section`
   display: flex;
   align-items: center;

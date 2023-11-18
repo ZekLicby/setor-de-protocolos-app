@@ -5,28 +5,34 @@ import {
   HeaderContainer,
   HeaderTitle,
   IconsContainer,
+  ProtocolNumber,
 } from "./styles";
 import { SearchIcon } from "@/icons/searchIcon";
 import { UserIcon } from "@/icons/userIcon";
 
 interface HeaderProps {
   hasFilter?: boolean;
+  headerTitle: string;
 }
 
-export const Header = ({ hasFilter }: HeaderProps) => {
+export const Header = ({ hasFilter = false, headerTitle }: HeaderProps) => {
   return (
     <HeaderContainer>
-      <HeaderTitle>DIRETORIA DE GESTÃO ESCOLAR</HeaderTitle>
-      <FilterContainer>
-        <FilterByDepartament>
-          <p>Todos os departamentos</p>
-          <ArrowIcon />
-        </FilterByDepartament>
-        <IconsContainer>
-          <SearchIcon />
-          <UserIcon />
-        </IconsContainer>
-      </FilterContainer>
+      <HeaderTitle>{headerTitle}</HeaderTitle>
+      {hasFilter ? (
+        <FilterContainer>
+          <FilterByDepartament>
+            <p>Todos os departamentos</p>
+            <ArrowIcon />
+          </FilterByDepartament>
+          <IconsContainer>
+            <SearchIcon />
+            <UserIcon />
+          </IconsContainer>
+        </FilterContainer>
+      ) : (
+        <ProtocolNumber>845942 - protocolo</ProtocolNumber>
+      )}
     </HeaderContainer>
   );
 };

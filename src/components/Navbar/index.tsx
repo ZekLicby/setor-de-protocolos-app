@@ -12,6 +12,7 @@ import { HomeIcon } from "@/icons/homeIcon";
 import { NavbarUserIcon } from "@/icons/navbarUserIcon";
 import { RegisterIcon } from "@/icons/registerIcon";
 import { ConsultIcon } from "@/icons/consultIcon";
+import Link from "next/link";
 
 const Navbar: React.FC = () => {
   return (
@@ -21,20 +22,24 @@ const Navbar: React.FC = () => {
         <IconTitle>Home</IconTitle>
       </HomeNavbarItem>
 
-      <ProfileNavbarItem isProfile>
+      {/* <ProfileNavbarItem isProfile>
         <NavbarUserIcon />
         <IconTitle>Perfil</IconTitle>
-      </ProfileNavbarItem>
+      </ProfileNavbarItem> */}
 
-      <RegisterNavbarItem isRegister>
-        <RegisterIcon />
-        <IconTitle>Registro</IconTitle>
-      </RegisterNavbarItem>
+      <Link href="/registro">
+        <RegisterNavbarItem isRegister>
+          <RegisterIcon />
+          <IconTitle>Registro</IconTitle>
+        </RegisterNavbarItem>
+      </Link>
 
-      <ConsultNavbarItem isConsult>
-        <ConsultIcon />
-        <IconTitle>Consulta</IconTitle>
-      </ConsultNavbarItem>
+      <Link href="/consulta">
+        <ConsultNavbarItem isConsult>
+          <ConsultIcon />
+          <IconTitle>Consulta</IconTitle>
+        </ConsultNavbarItem>
+      </Link>
     </NavbarContainer>
   );
 };
