@@ -8,7 +8,7 @@ import {
 export const ConsultaScreen = () => {
   return (
     <ConsultaBodyContainer>
-      <Header />
+      <Header hasFilter={true} headerTitle="DIRETORIA DE GESTÃO ESCOLAR" />
       <ConsultaBodyConsultasContainer>
         <Consultas>
           <p>Requerimento 1</p>
